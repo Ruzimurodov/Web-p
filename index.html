@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webp</title>
+</head>
+<body style="display: flex;align-items: center;justify-content: space-around;height: 100vh;">
+    
+    <picture>
+        
+        <!-- WebP -->
+        
+        <source type="image/webp"
+        media="(max-width: 426px)"
+        srcset="./images/coffee-mobile.webp 1x ,./images/coffee-mobile@2x.webp 2x"
+        >
+        
+        <source type="image/webp"
+        media="(max-width: 769px)"
+        srcset="./images/coffee-tablet.webp 1x ,./images/coffee-tablet@2x.webp 2x"
+        >
+        
+        <source type="image/webp"
+        srcset="./images/coffee-desktop.webp 1x ,./images/coffee-desktop@2x.webp 2x"
+        >
+        
+        <!-- Jpeg Default -->
+        
+        <source
+        media="(max-width: 425px)"
+        srcset="./images/coffee-mobile.jpg 1x ,./images/coffee-mobile@2x.jpg 2x"
+        >
+        
+        <source
+        media="(max-width: 768px)"
+        srcset="./images/coffee-tablet.jpg 1x ,./images/coffee-tablet@2x.jpg 2x"
+        >
+        
+        
+        <img src="./images/coffee.jpg"
+        srcset="./images/coffee.jpg 1x ,./images/coffee@2x.jpg 2x "
+        width="445"
+        height="474"
+        alt="A cap of coffee">
+        
+    </picture>
+    
+    <picture>
+
+        <!-- web-p -->
+        <source type="image/webp"
+        media="(max-width: 426px)"
+        srcset="./images/barista-mobile-webp.webp 1x, ./images/barista-mobile-webp@2x.webp 2x"
+        >
+
+        <source type="image/webp"
+        media="(max-width: 769px)"
+        srcset="./images/barista-tablet-webp.webp 1x, ./images/barista-tablet-webp@2x.webp 2x"
+        >
+
+        <source type="image/webp"
+        srcset="./images/barista-webp.webp 1x, ./images/barista-webp@2x.webp 2x"
+        >
+
+
+        <!-- Default jpeg -->
+        <source
+        media="(max-width: 426px)"
+        srcset="./images/barista-mobile.jpg 1x, ./images/barista-mobile@2x.jpg 2x"
+        >
+
+        <source 
+        media="(max-width: 769px)"
+        srcset="./images/barista-tablet.jpg 1x, ./images/barista-tablet@2x.jpg 2x"
+        >
+
+        <img src="./images/barista.jpg" 
+        srcset="./images/barista.jpg 1x, ./images/barista@2x.jpg 2x "
+        width="445"
+        height="520"
+        alt="barista making coffee">
+    </picture>
+</body>
+</html>
